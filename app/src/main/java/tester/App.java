@@ -35,11 +35,7 @@ public class App {
 
                     System.out.println("Found image " + binaryPart.getPartName().getName());
 
-                    // Here you might check for some criteria to identify the image to replace
-                    // ...
-
                     // Replace the image
-
                     if (binaryPart.getPartName().getName().equals("/word/media/image4.png")) {
                         byte[] newImageBytes = Files.readAllBytes(Paths.get("test.png"));
                         BinaryPartAbstractImage imagePart = BinaryPartAbstractImage.createImagePart(wordMLPackage,
